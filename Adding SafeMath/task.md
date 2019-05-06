@@ -1,10 +1,6 @@
-## Solidity Task
+## Using SafeMath
+- Create a library called **SafeMath**
+- Add the correct **using SafeMath for** statement to the **Token** contract.
+- Refactor the **Token** contract to use **add** from **SafeMath** instead of **+** and **sub** from **SafeMath** instead of **-**
 
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+*Unlike the other tasks, this initial code for this stage is the same as the initial code for the previous stage.
