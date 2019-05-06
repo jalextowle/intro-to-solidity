@@ -1,8 +1,8 @@
-const Token = artifacts.require('./First')
+const Token = artifacts.require('./Token')
 
-// A test suite for the First smart contract
+// A test suite for the Token smart contract
 contract('#Token', () => {
-    // This test passes if the First contract deploys successfully
+    // This test passes if the Token contract deploys successfully
     it('should deploy successfully', async () => {
         await Token.new()
     })

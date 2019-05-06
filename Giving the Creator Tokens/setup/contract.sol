@@ -5,7 +5,7 @@ contract Token {
 	string public constant symbol = "TOK";
 	uint8 public constant decimals = 18;
 
-	uint256 public tokenSupply;
+	uint256 public totalSupply;
 	mapping (address => uint256) balances;
     mapping (address => mapping (address => uint256)) allowed;
 
