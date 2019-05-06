@@ -1,5 +1,5 @@
-## Say Congratulations!
+# Great job!
 
-This is your chance to tell the user what a great job they did.
+Your token is starting to take shape! Unlike before, we can the token holdings of individual token addresses. Unfortunately, none of us actually own your tokens yet, but we'll get there!
 
-And prep them for what's coming next! ;)
+Before we start to distribute tokens, let's give users the ability to create allowances. Onwards and upwards!
