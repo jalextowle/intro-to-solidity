@@ -1,10 +1,4 @@
-## Solidity Task
+## Making the token safe
 
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+- Add a **require** statement to the **transfer** and **transferFrom** functions to make sure that the address that is transfering tokens has enough tokens to transfer
+- Add a **require** statement to the **transferFrom** function to make sure that the **spender** has a high enough allowance to complete the **transferFrom**

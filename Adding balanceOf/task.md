@@ -1,10 +1,8 @@
-## Solidity Task
-
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+## User token balances
+It's essential for users to be able to see how many tokens they have from our **Token** contract, so that they know how much they can spend. At the moment, there isn't a way for users to see how many tokens they have. 
+- Add a function to the **Token** contract called **balanceOf**. 
+    - Add a parameter of type **address**
+    - Add a return value of type **uint256**
+    - Implement the function so that it returns the value of a given address
+- Add a mapping called **balances** to the contract
+    - The mapping should take **address** to **uint256**

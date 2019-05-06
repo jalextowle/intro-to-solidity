@@ -1,10 +1,6 @@
-## Solidity Task
+## Creating Allowances
 
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+- Add a function called **approve**
+    - Add an **address** parameter called **spender**
+    - Add a **uint256** parameter called **value**
+    - Implement the function so that it updates the allowance of the **spender** on behalf of the sender of the transaction (the **msg.sender** address) to the **value** specified. 

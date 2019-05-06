@@ -1,10 +1,3 @@
-## Solidity Task
-
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+## Tracking the token's supply
+How many tokens does our contract have? Well at the moment, it doesn't seem to have any. In this section, you'll change that. 
+- Add a **uint256 public** field called **totalSupply** to the **Token** contract.
