@@ -1,10 +1,6 @@
-## Solidity Task
+## Making tokens spendable
 
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+- Add a function called **transfer**
+    - Add an **address** parameter called **to**
+    - Add a **uint256** parameter called **value**
+    - Implement the function so that it transfers **value** tokens from the sender of the message to the **to** address

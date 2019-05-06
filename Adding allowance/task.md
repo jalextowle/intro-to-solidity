@@ -1,10 +1,9 @@
-## Solidity Task
+## Allowance
+ERC20 tokens allow users to spend their own tokens and also to spend the tokens of other users, so long as the owner of the token has given the spender an allowance. Let's update the **Token** contract so that our user's can see their allowances. 
 
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+- Add a function called **allowance**
+    - Add two address parameters (call the first **owner** and the second **spender**)
+    - Add a return value of type **uint256**
+    - Implement the function so that users can see their accurate allowance
+- Add a mapping called **allowed** to the contract
+    - The mapping should take **address** to **mapping (address => uint256)****

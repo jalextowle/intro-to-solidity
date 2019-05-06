@@ -1,10 +1,5 @@
-## Solidity Task
+## Distributing Tokens
 
-Outline the things that need to be done in order to write a smart contract that passes all of the test cases.
-
-You can write a list of actions like this:
-
-- Add a constructor
-- Add a `public` `address` member variable named `recipient`
-- Store the senders address as the initial recipient.
-
+- Add a constructor to the **Token** contract
+    - Set the **totalSupply** variable to **1000 \* (10 \*\* uint256(decimals))**
+    - Set the balance of the **msg.sender** to the **totalSupply**
