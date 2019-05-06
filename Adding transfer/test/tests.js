@@ -37,7 +37,7 @@ contract("#Token", (accounts) => {
         })
     })
 
-    describe('ERC20 Standard', () => {
+    describe('ERC20 Getters', () => {
         context('allowance', async () => {
             it('should return zero for any owner and any spender', async () => {
                 let allowance = await token.allowance.call(owner, spender)
@@ -65,7 +65,9 @@ contract("#Token", (accounts) => {
                 assert.equal(supply.toString(), totalSupply.toString())
             })
         })
+    })
 
+    describe('ERC20 Stateful Functions', async () => {
         context('transfer', async () => {
             describe('the owner transfers a value of 1 to the spender', () => {
                 let balance
