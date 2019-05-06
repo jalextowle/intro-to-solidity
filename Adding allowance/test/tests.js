@@ -1,15 +1,57 @@
-const Contract = artifacts.require('Contract');
-contract('Contract', function (accounts) {
-    let contract;
-    const sender = accounts[0];
-    beforeEach(async () => {
-        contract = await Contract.new({
-            from: sender
-        });
-    });
+const Token = artifacts.require('./Token')
 
-    it('should set the beneficiary address', async () => {
-        const beneficiary = await contract.beneficiary.call();
-        assert.equal(beneficiary, sender);
-    });
-});
+contract("#Token", (accounts) => {
+    let token
+    let owner = accounts[0]
+    let spender = accounts[1]
+
+    beforeEach(async () => {
+        token = await Token.new()
+    })
+
+    describe('ERC20 Optional', async () => {
+        context('`name`', async () => {
+            it('should return the correct name', async () => {
+                let name = await token.name.call()
+                assert.equal(name, "Token")
+            })
+        })
+
+        context('`symbol`', async () => {
+            it('should return the correct name', async () => {
+                let sym = await token.symbol.call()
+                assert.equal(sym, "TOK")
+            })
+        })
+
+        context('`decimals`', async () => {
+            it('should return the correct name', async () => {
+                let decimals = await token.decimals.call()
+                assert.equal(decimals, 18)
+            })
+        })
+    })
+
+    describe('ERC20 Standard', async () => {
+        context('allowance', async () => {
+            it('should return zero for any owner and any spender', async () => {
+                let result = await token.allowance.call(owner, spender)
+                assert.equal(result.toString(), '0')
+            })
+        })
+
+        context('balanceOf', async () => {
+            it('should return zero for any owner', async () => {
+                let result = await token.balanceOf.call(owner)
+                assert.equal(result.toString(), '0')
+            })
+        })
+
+        context('totalSupply', async () => {
+            it('should return zero', async () => {
+                let result = await token.totalSupply.call()
+                assert.equal(result.toString(), '0')
+            })
+        })
+    })
+})
