@@ -55,6 +55,16 @@ contract Token {
 
 In this example, the variable in the **Token** contract has **type** **address** and has the **name** **b**. We will talk about addresses in depth in a later stage, but for now, just know that **address** is another Solidity type. Members of type address **cannot** be added, subtracted, multiplied, and divided with other addresses. This is the first -- but not the last -- example that types are different than one another, and that they have different behavior.
 
+To give variables a value, they can be set using the assignment operator, **=**. To give variables a default value, you would assign the variable where they are declared like so:
+
+```
+contract Token {
+    uint256 a = 1; // 1 is now the default value of a
+}
+```
+
+In this context, "default" means the value that the variable will have **unless the variable has been reassigned**. We'll talk more about assignment in later stages. 
+
 ## Public Variables
 
 Even though the examples above gave a smart contract a variable, users cannot see these variables because they are not **public**. The variables **a** and **b** from above could be used **inside** of the token contract, but there is not a way to get the data from the smart contract. 
