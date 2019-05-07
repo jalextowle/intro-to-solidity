@@ -1,5 +1,3 @@
-## Say Congratulations!
+## Congratulations!
 
-This is your chance to tell the user what a great job they did.
-
-And prep them for what's coming next! ;)
+Awesome job! You now have a production-quality ERC20 token. As you learned in the details, it isn't completely secure, but that's a problem with the ERC20 standard. 
