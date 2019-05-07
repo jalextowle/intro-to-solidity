@@ -1,5 +1,5 @@
-## Say Congratulations!
+## Nice job!
 
-This is your chance to tell the user what a great job they did.
+You now have a token that resembles many of the ERC20 tokens on the Ethereum blockchain. Your token is ERC20 compliant, and it is now safe against underflow attacks. 
 
-And prep them for what's coming next! ;)
+In the next stage, you'll create a **SafeMath** library, and change your token to use that instead. I think you'll like what you see!

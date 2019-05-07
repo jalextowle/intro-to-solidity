@@ -1,5 +1,5 @@
-## Say Congratulations!
+# Great Job!
 
-This is your chance to tell the user what a great job they did.
+The **Token** contract now implements all of the required function for the ERC20 standard. Actually, your token will be fully ERC20 compliant after the next stage. 
 
-And prep them for what's coming next! ;)
+Alright, let's learn about events now!
