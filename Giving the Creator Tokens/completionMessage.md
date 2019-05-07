@@ -1,5 +1,3 @@
-## Say Congratulations!
+## Congrats!
 
-This is your chance to tell the user what a great job they did.
-
-And prep them for what's coming next! ;)
+Nice! Your token officially has tokens now, and not the fake tokens that were represented by **totalSupply**. No, these new tokens are real because they are actually in a user's balance! At the moment, these tokens can't really do anything. We'll change that in the next stage!
