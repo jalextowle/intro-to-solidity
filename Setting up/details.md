@@ -11,7 +11,7 @@ contract A { }
 ```
 
 ### Compiler Version
-Solidity is a compiled language. This means that before compiling Solidity code, a special program called a **compiler** will be used to turn the source code into something that the Ethereum blockchain can understand. 
+Solidity is a compiled language. This means that before Solidity code can be used, a special program called a **compiler** will be used to turn the source code into something that the Ethereum blockchain can understand. The language that the Ethereum blockchain needs to be given is called **EVM bytecode**. This may change to **eWASM** in the future, but for now the **EVM**, the Ethereum Virtual Machine, is what Ethereum uses to execute code. 
 
 There are many different versions of Solidity, and for this reason, there are many Solidity compilers. Different versions of these compilers support different language features, so a line of code must be added at the top of every Solidity file to tell the compiler what version of Solidity is being compiled. This line of code is called a pragma statement, which looks like:
 

@@ -1,9 +1,9 @@
 ## Functions
-In the past two stages, you have created variables for the smart contract that are **public**. As you saw, marking variables as **public** allows external agents (users and other smart contracts) to get data from the smart contract.
+All transactions on the blockchain are started by human actors or programs that are connected to the blockchain. In this lesson, we'll use the term **external agents** to refer to these humans and programs that create transactions on the Ethereum blockchain. In the past two stages, you have created variables for the smart contract that are **public**. As you saw, marking variables as **public** allows external agents to get data from the smart contract. 
 
-It turns out that everything useful that smart contracts do must be initiated by an external agent. Essentially, smart contracts are static programs that only execute when an Ethereum transaction **calls** the smart contract. In the view of Solidity, the way to expose functionality to the outside world is by using **functions**. 
+Since all transactions originate from external agentsEssentially, smart contracts are static programs that only execute when an Ethereum transaction **calls** the smart contract. In the view of Solidity, the way to expose functionality to the outside world is by using **functions**. 
 
-Functions are one of the most important concepts in programming. At their most basic, functions don't do anything:
+Functions are one of the most important concepts in programming. At their most basic, functions are just empty procedures that don't do anything:
 
 ``` 
 contract Nothing {
