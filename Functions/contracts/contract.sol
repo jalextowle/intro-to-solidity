@@ -6,7 +6,7 @@ contract Token {
 	uint8 public constant decimals = 18;
 
 	uint256 public totalSupply;
-	mapping (address => uint256) balances;
+	mapping (address => uint256) balanceOf;
 
     /* Getters */
 

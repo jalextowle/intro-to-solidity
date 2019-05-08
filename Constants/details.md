@@ -35,7 +35,6 @@ contract Token {
 ```
 
 ## Constants
-
 Variables are used to give smart contracts different named values. Sometimes, it will be necessary to give the smart contract named values that will never be changed. In these cases, we can save **gas** by making the variable a **constant**. You can use constants in the much the same way that you use normal variables; however, constants cannot be changed after they are set for the first time. 
 
 Example: 
