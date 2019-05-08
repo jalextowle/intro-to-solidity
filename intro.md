@@ -1,0 +1,3 @@
+## Welcome!
+
+Welcome to the Introduction to Solidity Lesson! In this lesson, you'll work through several programming tasks in the Solidity language. Throughout the lesson, you will learn about several topics that are specific to Ethereum and also many topics that are relevant to programming in general. By the end of the lesson, you will have created an ERC20 token contract, and you will have knowledge of some of the security risks that ERC20 contracts can be susceptible to.  
