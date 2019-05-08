@@ -1,3 +1,5 @@
+
+
 ## Necessary Programming Concepts
 The structure of Solidity causes the simplest examples of smart contracts to use several concepts for general programming. The reason for this complexity is that Solidity is a **contract oriented programming language**. This means that to write code works in Solidity, the programmer needs to use *contracts*. 
 

@@ -20,17 +20,13 @@ contract Token {
     /* Payment */
 
     function transfer(address _to, uint256 _value) public returns (bool) {
-        balances[msg.sender] -= _value;
-        balances[_to] += _value;
-		emit Transfer(msg.sender, _to, _value);
+        _transfer(msg.sender, _to, _value);
         return true;
     }
 
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
         allowed[_from][msg.sender] -= _value;
-        balances[_from] -= _value;
-        balances[_to] += _value;
-		emit Transfer(_from, _to, _value);
+        _transfer(_from, _to, _value);
         return true;
     }
 
@@ -48,5 +44,12 @@ contract Token {
 
     function balanceOf(address _owner) public view returns (uint256) {
         return balances[_owner];
+    }
+
+    /* Helpers */ 
+    function _transfer(address _from, address _to, uint256 _value) internal {
+        balances[_from] -= _value;
+        balances[_to] += _value;
+        emit Transfer(_from, _to, _value);
     }
 }

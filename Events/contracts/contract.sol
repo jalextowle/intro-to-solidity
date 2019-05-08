@@ -9,7 +9,7 @@ contract Token {
 	mapping (address => uint256) balances;
 	mapping (address => mapping (address => uint256)) allowed;
 
-	event Approval(address indexed tokenOwner, address indexed tokenSpender, uint256 tokens);
+    event Approval(address indexed tokenOwner, address indexed tokenSpender, uint256 tokens);
 	event Transfer(address indexed from, address indexed to, uint256 tokens);
 
     constructor() public {
@@ -20,23 +20,19 @@ contract Token {
     /* Payment */
 
     function transfer(address _to, uint256 _value) public returns (bool) {
-        balances[msg.sender] -= _value;
-        balances[_to] += _value;
-		emit Transfer(msg.sender, _to, _value);
+        _transfer(msg.sender, _to, _value);
         return true;
     }
 
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
         allowed[_from][msg.sender] -= _value;
-        balances[_from] -= _value;
-        balances[_to] += _value;
-		emit Transfer(_from, _to, _value);
+        _transfer(_from, _to, _value);
         return true;
     }
 
     function approve(address _spender, uint256 _value) public returns (bool) {
         allowed[msg.sender][_spender] = _value;
-		emit Approval(msg.sender, _spender, _value);
+        emit Approval(msg.sender, _spender, _value);
         return true;
     }
 
@@ -48,5 +44,12 @@ contract Token {
 
     function balanceOf(address _owner) public view returns (uint256) {
         return balances[_owner];
+    }
+
+    /* Helpers */ 
+    function _transfer(address _from, address _to, uint256 _value) internal {
+        balances[_from] -= _value;
+        balances[_to] += _value;
+        emit Transfer(_from, _to, _value);
     }
 }
