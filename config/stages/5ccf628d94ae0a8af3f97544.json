@@ -1,0 +1,20 @@
+{
+  "containerId": "5cb3f26b83c86ffd232dd1ba",
+  "title": "Integer Underflows",
+  "abiValidations": "$$LOOKUP",
+  "task": "$$LOOKUP",
+  "details": "$$LOOKUP",
+  "id": "5ccf628d94ae0a8af3f97544",
+  "type": "CodeStage",
+  "language": "solidity",
+  "languageVersion": "0.5.0",
+  "testFramework": "truffle_with_mocha",
+  "codeFileIds": [
+    "5ccf628d94ae0a8af3f97545",
+    "5ccf628d94ae0a8af3f97546"
+  ],
+  "position": 10,
+  "youtubeId": null,
+  "src": null,
+  "completionMessage": "$$LOOKUP"
+}

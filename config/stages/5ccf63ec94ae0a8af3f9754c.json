@@ -1,0 +1,20 @@
+{
+  "containerId": "5cb3f26b83c86ffd232dd1ba",
+  "title": "Approving Addresses",
+  "abiValidations": "$$LOOKUP",
+  "task": "$$LOOKUP",
+  "details": "$$LOOKUP",
+  "id": "5ccf63ec94ae0a8af3f9754c",
+  "type": "CodeStage",
+  "language": "solidity",
+  "languageVersion": "0.5.0",
+  "testFramework": "truffle_with_mocha",
+  "codeFileIds": [
+    "5ccf63ec94ae0a8af3f9754d",
+    "5ccf63ec94ae0a8af3f9754e"
+  ],
+  "position": 7,
+  "youtubeId": null,
+  "src": null,
+  "completionMessage": "$$LOOKUP"
+}
