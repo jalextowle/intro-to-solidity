@@ -1,0 +1,20 @@
+{
+  "containerId": "5cb3f26b83c86ffd232dd1ba",
+  "title": "Functions",
+  "abiValidations": "$$LOOKUP",
+  "task": "$$LOOKUP",
+  "details": "$$LOOKUP",
+  "id": "5ccf64e594ae0a8af3f97558",
+  "type": "CodeStage",
+  "language": "solidity",
+  "languageVersion": "0.5.0",
+  "testFramework": "truffle_with_mocha",
+  "codeFileIds": [
+    "5ccf64e594ae0a8af3f97559",
+    "5ccf64e594ae0a8af3f9755a"
+  ],
+  "position": 3,
+  "youtubeId": null,
+  "src": null,
+  "completionMessage": "$$LOOKUP"
+}

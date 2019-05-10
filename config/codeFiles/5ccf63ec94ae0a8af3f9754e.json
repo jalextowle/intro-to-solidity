@@ -1,0 +1,15 @@
+{
+  "executablePath": "contracts/contract.sol",
+  "name": "contract.sol",
+  "testFixture": false,
+  "stageContainerId": "5cb3f26b83c86ffd232dd1ba",
+  "codeStageIds": [
+    "5ccf63ec94ae0a8af3f9754c"
+  ],
+  "id": "5ccf63ec94ae0a8af3f9754e",
+  "initialCode": "$$LOOKUP",
+  "mode": "sol",
+  "visible": true,
+  "executable": true,
+  "hasProgress": true
+}
