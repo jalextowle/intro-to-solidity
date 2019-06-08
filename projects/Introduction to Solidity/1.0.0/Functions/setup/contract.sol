@@ -1,9 +1,3 @@
-pragma solidity ^0.5.0;
+pragma solidity // TODO: Select version 0.5.0 of the compile
 
-contract Token {
-	string public constant name = "Token";
-	string public constant symbol = "TOK";
-	uint8 public constant decimals = 18;
-
-	uint256 public totalSupply;
-}
+contract /* Fill in the name of the contract*/ { }

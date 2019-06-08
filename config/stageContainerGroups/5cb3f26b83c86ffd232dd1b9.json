@@ -4,6 +4,6 @@
   "containerType": "Lesson",
   "description": "Introduces several general programming concepts and shows how to implement them in solidity. Additionally, this lesson covers several Solidity specific topics.",
   "thumbnailUrl": null,
-  "productionReady": null,
+  "productionReady": true,
   "estimatedTime": null
 }
