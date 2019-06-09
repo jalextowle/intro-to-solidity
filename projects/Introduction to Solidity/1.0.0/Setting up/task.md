@@ -1,13 +1,11 @@
 # Setting up the environment
 
-## Getting Started
-Welcome to the Introduction to Solidity Lesson! In this lesson, you will gain a foundational education of the Solidity programming language by building your own ERC20 token.
-
-Solidity experience is not required for this tutorial and, the tutorial can be completed with a minimal amount of programming experience. Throughout the lesson, you will learn some general programming concepts that will carry over into other languages.
-
 ## Tasks
-Throughout the lessons, you will be provided tasks to complete for each "stage". To pass the stage, you will complete the specified tasks, which will cause the test cases to pass. 
+In each stage of this lesson you will be given tasks to complete on the *tasks* page. These tasks are the high level goals for the stage, and you will have to complete them to move onto the next stage. 
 
-In this stage, the task is to complete the following:
+In this stage, your task consists of completing the following bullet points:
 - Complete the **pragma solidity** statement by specifying that we are using compiler version 0.5.0
 - Create an empty Solidity contract called **Token**
+
+## Details
+Each stage has a *details* page that provides in-depth coverage of the concepts that are being taught. Most of the resources that are provided in this lesson will be found in the *details* section, so it is recommended to read both the *tasks* and *details* pages for each stage.
