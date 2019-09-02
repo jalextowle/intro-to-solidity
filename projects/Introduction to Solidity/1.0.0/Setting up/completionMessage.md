@@ -4,4 +4,4 @@ Nice job! You just wrote your first Solidity contract. In fact, this contract wa
 
 In all of the following lessons, you will use what you learned in this lesson to write smart contracts. 
 
-In the next stage, we'll dive into **constants**!
+In the next stage, we'll dive into **variables**!
