@@ -1,5 +1,9 @@
 # Setting up the environment
 
+In this lesson, you will create a smart contract called a **Token** smart contract. You can think of tokens like *dollars* (or any other type of asset). Tokens can be given to other people, they can be lent to other people via allowances, and you can see how many tokens someone owns.
+
+This section will introduce a lot of material to get you started so that later sections can focus more on the core concepts surrounding ERC20 tokens.
+
 ## Tasks
 In each stage of this lesson you will be given tasks to complete on the *tasks* page. These tasks are the high level goals for the stage, and you will have to complete them to move onto the next stage. 
 

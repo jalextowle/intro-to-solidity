@@ -1,3 +1,7 @@
+# Smart Contract Security
+
+The study and practice of securing smart contracts is known as **Smart Contract Security**. One of the reasons why cryptocurrencies lost popularity in late 2017 (though certainly not the only reason) was that there were several high profile hacks of smart contracts, including several token contracts. This field is an exciting, interesting, and dynamic area of research and engineering (and the one where this author found his start in Ethereum programming). As mentioned previously, we will be discussing a few of the potential attacks that can be made on ERC20 contracts.
+
 ## Integer Underflows
 In the **Token** smart contract, all balances are represented by 256 bit unsigned integers. Because these numbers are unsigned, the values of these integers are always greater than or equal to zero. In normal arithmetic, an expression like `0 - 1` would be equal to the integer `-1`. **This is not what happens with uint256 numbers**. 
 
