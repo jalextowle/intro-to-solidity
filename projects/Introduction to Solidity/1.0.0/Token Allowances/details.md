@@ -4,29 +4,26 @@ It is essential for token contracts to track the balances of their users. Someth
 Allowances can be useful for creating functionality that allows tokens to be spent without the owner being directly involved. For example, a subscription service may require users to give their subscription smart contract an allowance of ERC20 tokens. Then, the subscription smart contract can automatically charge users in tokens for using the service. If a user would like to stop subscribing to the service, all they will need to do is set the allowance of the subscription service to zero. 
 
 ## Nested Mappings
-As you saw in the previous stage, mappings can be useful for tracking data about every member of a given type. Mappings can map to any Solidity type. This includes other mappings. We can create nested mappings as follows: 
+As you saw in the previous stage, mappings can be useful for tracking data about every member of a given type. Mappings can map to any Solidity type. This includes other mappings. We can create snested mappings as follows: 
 
 ```
 contract Nested {
-    mapping (address => mapping (address => uint256)) allowed;
+    mapping (bytes32 => mapping (bytes32 => uint256)) someMapping;
 }
 ```
 
-The above mapping keeps a key-value database of mappings from **addresses** to **uint256** values under each **address**. These mappings can be seen as the **allowances** of different addresses on behalf of **owner addresses**. 
+The above mapping takes in two bytes32 keys, and stores a single uint256 value. The order of the keys **does** matter to what value will be stored or loaded. If you don't believe me, then try it out for yourself!
 
-The members of nested mappings can be accessed as follows:
+Values are stored in the mapping like so (where someKey1 and someKey2 are bytes32 values and someValue is a uint256 value):
 
 ```
-contract Nested {
-    mapping (address => mapping (address => uint256)) allowed;
+someMapping[someKey1][someKey2] = someValue;
+```
 
-    function allowance(
-        address _owner, 
-        address _spender
-    ) public pure returns (uint256) {
-        return allowed[_owner][_spender];
-    }
-}
+Values are read in a similar way, like so:
+
+```
+someValue = someMapping[someKey1][someKey2];
 ```
 
 Nested mappings that are deeper will continue to be accessed in a similar manner, with one bracketed value for each level of keys in the mapping. 
