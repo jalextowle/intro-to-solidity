@@ -11,7 +11,8 @@
   "testFramework": "truffle_with_mocha",
   "codeFileIds": [
     "5ccf64e594ae0a8af3f97559",
-    "5cb3f44d83c86ffd232dd1bd"
+    "5cb3f44d83c86ffd232dd1bd",
+    "5d6de2a978950b4ef7c0751d"
   ],
   "position": 3,
   "youtubeId": null,
