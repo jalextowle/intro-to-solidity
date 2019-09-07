@@ -160,6 +160,6 @@ contract Token {
         return balances[_owner];
     }
 }
-``` 
+```
 
 The syntax **balances\[ADDRESS\]** returns the **uint256** value that is stored in the **balances** mapping under the **address** ADDRESS. 
