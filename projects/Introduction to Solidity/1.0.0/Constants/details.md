@@ -20,7 +20,11 @@ so it would have a **decimals** value of **10**.
 
 Ethereum tracks even more decimals and would have a **decimals** value of **18**. 
 
-Most ERC20 tokens follow Ethereum's convention and use a **decimals** field of 18. This is what we will use in this lesson. 
+Most ERC20 tokens follow Ethereum's convention and use a **decimals** field of 18. You can choose whatever you'd like in this lesson.
+
+This field is a `uint8` in the ERC20 standard because a `uint8` is big enough to handle any number of decimals in a `uint256`. Think of it like this:
+
+Every number of digits represents one extra bit in the total amount of tokens. There are only `256` bits in a `uint256` number, so a `uint8` number is more than large enough to accomodate the number of digits in a `uint256` number.
 
 ## Strings
 The task for this stage requires that two **string** variables are added to the smart contract. This type exists in most statically-typed languages, and it represents a "string of characters." To be a bit more precise, a string is a sequence of encoded characters. In most languages, strings are represented by putting quotation marks around the "string of characters" that are supposed to be in the string. 
