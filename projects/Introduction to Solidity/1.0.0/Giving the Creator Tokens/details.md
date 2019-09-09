@@ -23,7 +23,7 @@ contract ComplicatedConstructable {
 }
 ```
 
-Just like normal functions, constructors can have a list of  parameters, and they can also set state variables. Constructors are not allowed to return values. The reason for this is fairly technical, and it is out of the scope of this tutorial, but it can be found in the Ethereum Yellow Paper. This edge case is a good example that a thorough understanding of the Ethereum Virtual Machine is necessary to fully understand the Solidity programming language and Ethereum smart contracts in general. 
+Just like normal functions, constructors can have a list of  parameters, and they can also set state variables. Constructors are not allowed to return values. The reason for this is fairly technical, and it is out of the scope of this tutorial, but it can be found in the [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf). This edge case is a good example that a thorough understanding of the Ethereum Virtual Machine is necessary to fully understand the Solidity programming language and Ethereum smart contracts in general. 
 
 ## Transaction Data
 As discussed in previous stages, smart contract execution always originates from an external agent. To make this more precise, all activity on the Ethereum blockchain derives from **Ethereum transactions**. These transactions are messages submitted to the Ethereum network by humans and computer programs that are acting through their **Ethereum account**. 
@@ -41,6 +41,10 @@ Mappings can be set with the following syntax:
 contract Token {
     mapping (address => uint256) balances;
 
+    // This is a dangerous function for a token contract since
+    // anyone will be able to set whichever balance they would like!
+    // Anyone can call this, and there are no restrictions on what people
+    // can do with this.
     function set(address _owner, uint256 _value) public {
         balances[_owner] = _value;
     }
